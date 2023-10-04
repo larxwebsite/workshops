@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap');
+
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: bolder;
+    font-weight: 1000;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/firasans/v17/va9B4kDNxMZdWfMOD5VnPKreQhf6Xl7Gl3LX.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+
+/* CSS Reset */
+* { padding:0; margin:0;}
+/* Common Properties for all objects */
+body { font-family: "Fira Sans"; background-color: white;}
+/* Part #1 : Website Header */
+header { text-align: center; padding-top: 20px; padding-bottom: 40px; background-color: #330662;}
+header h1 { font: size 72px; color: #eee6f3;}
+header h2 { font: size 96px; color: white; font-family: "Charm";}
+
+/* Tablet and Desktop version */
+@media screen and (min-width : 840px) {
+
+
+    /* Part #1 : Navigation/Links */
+nav { background: #eee6f3; font-size: 1em; color: #7b5aa6; }
+nav a {text-decoration: none; color: #7b5aa6;}
+nav ul { list-style: none; width: 700px; margin:0 auto; padding:0; display: flex; height: 55px; align-items: center;}
+nav ul li { box-sizing: border-box;  padding: 30px;}
+}
+
+
+
+/* Part #3 : Contact and Image */
+#ContactAndImage { background: #f5deb3; height: 300px; display: flex; justify-content: center;}
+#Image { width:240px; height: 300px; text-align: right;}
+#Image img {margin: 30px auto; margin-right: 20px; height: 240px;}
+
+#Contact { width: 400px; height: 300px; text-align: left;}
+#Contact > div { background: rgba(0,0,0,0.5); color: #f5fffa; height: 240px; 
+               width: 360px; text-align: center;margin: 30px;}
+#Contact h2 { color: #efefd7; font-size: 28px; font-weight:bold; padding-top: 30px; padding-bottom: 10px;}
+#Contact p { font-size:18px; margin: 5px; }
+
+/* Part #4 : Content */
+#Content {margin: auto; width: 800px; margin-top: 40px;}
+#Content h2 {text-align: center; background:#66513c ; color: #f5deb3; ;font-size: 24px;padding: 10px; margin-top: 30px; margin-bottom: 20px;}
+#Content h3 {color: #7b5aa6; font-weight: bolder; padding-top: 20px;font-size: 22px; padding-bottom: 10px;}
+.type1 {padding-left: 40px; list-style: circle;}
+.type1 li {padding: 3px;}
+.type2 {padding-left: 40px; list-style: square;}
+.type2 li {padding: 3px;}
+#Content a {color: #66513c;}
+#Content p {padding-top: 10px; padding-bottom: 10px; text-align: justify; line-height: 150%;}
+#Content p b {font-weight: bolder;}
+#Content h3, p {padding: 10px;}
+
+
+/* For Tables */
+
+#Agenda table {margin: auto;}
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.styled-table thead tr {
+    background-color: #7b5aa6;
+    color: #ffffff;
+    text-align: center;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #7b5aa6;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #7b5aa6;
+}
+
+
+
+/* Part #5 : Footer */
+#footer{ height: 100px;}
+
+/* Mobile Version */
+@media screen and ( max-width : 839px) {
+
+    nav ul { display: none;}
+    
+
+    #ContactAndImage { background: #f5deb3; height: 560px; display:block;}
+    #Image { width:300px; height: 300px; text-align: center;margin: auto;}
+    #Image img {margin: 30px auto; height: 240px;text-align: center;}
+    #Contact { width: 400px; height: 200px; text-align: center;margin: auto;}
+    #Contact > div { background: rgba(0,0,0,0.5); color: #f5fffa; height: 200px; 
+        width: 380px; text-align: center;margin: 20px;}
+    #Contact p { font-size:18px; padding: 5px;}
+    #Content {margin: auto; width: 100%; margin-top: 40px;}
+
+}
