@@ -6,6 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NYC Cybersecurity Day Workshop Series at NYU</title>
     <link href="css.css" rel="stylesheet" type="text/css"/>
+    <script>
+        function readMore1() {
+            var dots = document.getElementById("dots1");
+            var moreText = document.getElementById("more1");
+            var btnText = document.getElementById("myBtn1");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function readMore2() {
+            var dots = document.getElementById("dots2");
+            var moreText = document.getElementById("more2");
+            var btnText = document.getElementById("myBtn2");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>    
 </head>
 <body>
 
@@ -28,12 +60,16 @@
     </nav>
 
 
-    <div id="Flyer">
-        <img src="index.files/WORKSHOP_2.png">
-    </div>
-
     <!-- Part #3 - Content  -->
     <section id="Content">
+
+        <div id="Registration"> 
+            &nbsp <a href="https://forms.gle/wsNkQy8fuEgWgWQ87"><b>Registration Form</b></a>
+            <br><br>
+            &nbsp Please complete the form if you would like to attend the event.
+        </div>
+         <p>&nbsp;</p>
+
         <div id="About">
             <h3><b>About the workshop</b></h3>
             <p>&nbsp &nbsp &nbsp The NYC Cybersecurity Day workshop is organized by New York University (NYU) in collaboration with universities in the NYC area, including CUNY, Columbia, Cornell, and NYU. The event is primarily organized by students, with sponsorship from Google and NYU's Center for Cybersecurity. Our goal is to unite experts from the NYC region to discuss the future of cybersecurity. This workshop will be the first workshop of the series. The workshop would be a half-day event  taking place at NYU Brooklyn's hub for technology and art, bringing together a distinguished group of leading scholars and experts specializing in various aspects of human elements in cybersecurity. Discussions will delve into vital topics such as privacy, network management, ethics in AI systems, legal considerations, and more.</p>
@@ -70,7 +106,7 @@
                 </tr>
                 <tr class="active-row">
                 <td>09:30 - 10:00</td>
-                <td>Robert Thomson - United States Military Academy West Point <br> Topic: Cognitive Science and Cybersecurity <br> <a href="#Speaker1">Bio and Abstract</a> </td>
+                <td>Robert Thomson - United States Military Academy West Point <br> Topic: The Forgotten Few: Why Human Factors is the Future of Cybersecurity <br> <a href="#Speaker1">Bio and Abstract</a> </td>
                 </tr>
                 <tr class="active-row">
                 <td>10:00 - 10:30</td>
@@ -93,31 +129,39 @@
         </div>
         <p>&nbsp;</p>
 
-        <div id="Registration">
-            <h3><b>Registration Form: </b></h3> 
-            &nbsp &nbsp &nbsp<a href="https://forms.gle/wsNkQy8fuEgWgWQ87">https://forms.gle/wsNkQy8fuEgWgWQ87</a>
-            <br><br>
-            &nbsp Please complete the form if you would like to attend the event.
-        </div>
-         <p>&nbsp;</p>
+        
 
         <div id="Speakers">
             <h3><b>Invited Speakers </b></h3>
             <h4 id="Speaker1"><b>Robert Thomson </b></h4>
+                <img src="index.files/speaker1.png" alt="">
                 <p><b>Bio</b>
-                    TBD.
+                    <br>
+                    &nbsp &nbsp &nbsp Dr. Robert Thomson is an Associate Professor in the Engineering Psychology Program 
+                    at the United States Military Academy, is a Cognitive Science Researcher at the Army Cyber 
+                    Institute, and currently serves as the Dean's Fellow for Research. Dr. Thomson has over 12 
+                    years of post-graduate research experience and over 80 invited and refereed academic 
+                    publications in the domains of computational modeling, intelligence analysis, cybersecurity, and 
+                    artificial intelligence. He has been selected for more than $25M in reimbursable research 
+                    from IARPA (ICArUS), DARPA (XAI, ASED, ANSR, & a SBIR), ONR (FY21 MURI), and DEVCOM.
                 </p>
-                <p><b>Abstract</b>
-                    TBD.
-                </p>
+                <p><b>Topic: The Forgotten Few: Why Human Factors is the Future of Cybersecurity</b></p>
             <h4 id="Speaker2"><b>S. Matthew Liao </b></h4>
+                <img src="index.files/speaker2.png" alt="">
                 <p><b>Bio</b>
-                    TBD.
+                    <br>
+                    &nbsp &nbsp &nbsp S. Matthew Liao is Arthur Zitrin Professor of Bioethics, Director of the Center for 
+                    Bioethics, and Affiliated Professor in the Department of Philosophy at New York University. 
+                    He is the author of The Right to Be Loved (Oxford University Press, 2015); Philosophical Foundations of 
+                    Human Rights (Oxford University Press, 2015), Moral Brains: The Neuroscience of Morality (Oxford University 
+                    Press, 2016), and over 50 articles in philosophy and bioethics. He has given a TED talk in New York, a TEDx 
+                    talk at CERN, and he has been featured in the New York Times, The Atlantic, The Guardian, the BBC, Harper’s Magazine, 
+                    Sydney Morning Herald, Scientific American and other media outlets. He is the Editor-in-Chief for the Journal of Moral 
+                    Philosophy, a peer-reviewed international journal of moral, political and legal philosophy.
                 </p>
-                <p><b>Abstract</b>
-                    TBD.
-                </p>
+                <p><b>Topic: Ethics of Artificial Intelligence</b></p>
             <h4 id="Speaker3"><b>Rae Zimmerman </b></h4>
+                <img src="index.files/speaker3.png" alt="">
                 <p><b>Bio</b>
                     <br> 
                     &nbsp &nbsp &nbsp Rae Zimmerman is Research Professor and Professor Emerita of Planning and Public
@@ -128,7 +172,7 @@
                         of two SRA awards: Distinguished Achievement (2019) and Outstanding Service (2015); has held
                         appointments to the Transportation Research Board standing committees currently appointed
                         to the Standing Committee on Systems, Enterprise and Cyber Resilience (AMR40), and had two
-                        prior appointments to the NYC Panel on Climate Change. Her authored or co-edited books
+                        prior appointments to the NYC Panel on Climate Change. <span id="dots1">...</span><span id="more1"> Her authored or co-edited books
                         include “Urban Infrastructure” co-edited with J. Heathcott and J. Soffer (U Pittsburgh Press
                         2022), “Transport, the Environment and Security” (Edward Elgar 2012), several other authored
                         and co-edited books, and about 200 other publications on social, economic, and physical
@@ -141,18 +185,21 @@
                         resilience, and risk communication. Her research has been supported by over four dozen
                         research grants where she served as PI or co-PI. URL:http://wagner.nyu.edu/zimmerman; B.A.
                         Chemistry (U. of California, Berkeley), Master of City Planning (U. of Pennsylvania), and Ph.D in
-                        Planning Columbia University.
+                        Planning Columbia University. </span> <button onclick="readMore1()" id="myBtn1">Read more</button>
                 </p>
-                <p><b>Abstract</b>
-                    <br> &nbsp &nbsp &nbsp Information technologies (IT) are extensively integrated within the critical infrastructures upon
+                <p><b>Topic: The Influence of Human Behavior on Critical Infrastructure Cybersecurity</b></p>
+                <p><u>Abstract</u>
+                    <br>
+                    &nbsp &nbsp &nbsp Information technologies (IT) are extensively integrated within the critical infrastructures upon
                             which society depends. The reliance on IT has been increasing dramatically with the
                             introduction of critical infrastructure technologies such as autonomous vehicles in
                             transportation, automated electric power grids, and water and wastewater automated controls
                             and detection systems. These developments make cybersecurity increasingly important to
                             protect these infrastructures. The ways people react to and behave with respect to cyber
                             threats is an often subtle, unrecognized, and overlooked element in supporting these systems
-                            and must be confronted to enhance cybersecurity for these infrastructures. 
-                    <br> &nbsp &nbsp &nbsp As a foundation for understanding the role of human behavior in cybersecurity for critical
+                            and must be confronted to enhance cybersecurity <span id="dots2">...</span><span id="more2"> for these infrastructures. 
+                    <br>
+                    &nbsp &nbsp &nbsp As a foundation for understanding the role of human behavior in cybersecurity for critical
                             infrastructures, the infiltration and integration of IT into critical infrastructures is first identified
                             along with the history of cyber intrusions in these infrastructures. Second, a typology of human
                             behavior with respect to infrastructure in general and the security of IT in these infrastructures
@@ -168,10 +215,14 @@
                             discussed. Finally, behavior is deeply engrained in larger social psychological factors that shape
                             attitudes, perceptions, beliefs, and actions based upon them. These range from fear and dread
                             to the need to control unknown risks. These factors are introduced as possible explanations for
-                            human behavior with respect to cyber security.
+                            human behavior with respect to cyber security. </span> <button onclick="readMore2()" id="myBtn2">Read more</button>
                 </p>
+                
         </div>
         <br>
+        <div id="Flyer">
+            <img src="index.files/WORKSHOP_3.png">
+        </div>
 
     
 

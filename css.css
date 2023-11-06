@@ -29,7 +29,7 @@ nav a {text-decoration: none; color: #7b5aa6;}
 nav ul { list-style: none; width: 700px; margin:0 auto; padding:0; display: flex; height: 55px; align-items: center;}
 nav ul li { box-sizing: border-box;  padding: 30px;}
 #Flyer {margin:auto; display:block; text-align: center; align-items: center;}
-#Flyer img {width: 60%; margin: 20px auto}
+#Flyer img {width: 70%; margin: 20px auto}
 }
 
 
@@ -55,9 +55,16 @@ nav ul li { box-sizing: border-box;  padding: 30px;}
 .type2 {padding-left: 40px; list-style: square;}
 .type2 li {padding: 3px;}
 #Content a {color: #66513c;}
-#Content p {padding-top: 10px; padding-bottom: 10px; text-align: justify; line-height: 150%;}
-#Content p b {font-weight: bolder;}
-#Content h3, h4, p {padding: 10px;}
+#Content p {padding-top: 10px; padding-bottom: 10px; text-align: justify; line-height: 150%; font-size: 16px;}
+#Content p b {font-weight: bolder; font-size: 18px;}
+#Content h3, h4, p, img {padding: 10px;}
+#Registration a {color: blue;}
+#Speakers img {width: 200px; margin:0 auto}
+
+/* For read more */
+
+#more1 {display: none;}
+#more2 {display: none;}
 
 
 /* For Tables */
